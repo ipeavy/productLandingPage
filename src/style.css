@@ -13,12 +13,24 @@ h1 {
   font-size: 30px;
 }
 
-ul{
-    font-size: 16px;
+ul {
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+}
+
+li{
+  padding: 1rem 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
 }
 
 #wrapper {
-  padding: 1rem;
+  padding: 0.5rem;
   max-width: 1368px;
   margin: 0 auto;
 }
@@ -46,6 +58,12 @@ ul{
   border-radius: 10px;
 }
 
+#tribute-info {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 #image {
   width: 100%;
   max-width: 100%;
@@ -57,7 +75,7 @@ ul{
   padding: 0;
 }
 
-.padder{
-    padding: .5rem;
-    font-size: 16px;
+.padder {
+  padding: 0.5rem;
+  font-size: 16px;
 }
