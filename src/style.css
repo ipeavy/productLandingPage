@@ -10,6 +10,15 @@ html {
   height: 100%;
 }
 
+main {
+  padding: 4rem 0;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
   font-size: 18px;
@@ -19,6 +28,8 @@ body {
 input {
   max-width: 500px;
   margin: 0 auto;
+  border-radius: 3px;
+  border: none;
 }
 
 input[type="text"],
@@ -27,9 +38,29 @@ input[type="text"],
   width: 100%;
 }
 
+::placeholder {
+  margin: 0 0 0 0.5rem;
+}
+
+input[type="button"] {
+  height: 45px;
+  width: 400px;
+}
+
+label {
+  padding: 0.7rem 0;
+}
+
 textarea {
   width: 100%;
   max-width: 500px;
+  border-radius: 3px;
+  border: none;
+}
+
+.button-container {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 p {
@@ -49,10 +80,15 @@ h1 {
   justify-content: center;
 }
 
+#dropdown {
+  margin: 0 0 1rem 0;
+}
+
 #survey-form {
   max-width: 600px;
   padding: 0 1rem;
   border-radius: 0.5rem;
+  text-align: left;
   color: #fff;
   margin: 0 auto;
   background-color: rgb(255, 95, 31, 0.75);
