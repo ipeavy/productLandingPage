@@ -2,23 +2,36 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.wrapper{
+  background-image: url("https://imagedelivery.net/69_vwp5TEvZvAzsHMtkORA/2aa169cb-d02c-483e-e561-a4aa6c785700/public");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-size: 18px;
   text-align: center;
 }
 
+p{
+  color: #fff;
+}
+
 h1 {
-  color: #333333;
+  color: #fff;
   text-align: center;
   font-size: 30px;
+  margin: 0;
 }
 
 #survey-form {
   width: 100%;
   max-width: 600px;
   border-radius: .5rem;
+  color: #fff;
   margin: 0 auto;
-  background-color: rgb(242, 84, 48, 0.9);
-  height: 100%;
+  background-color: rgb(242, 84, 48, 0.75);
 }
