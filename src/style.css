@@ -2,12 +2,12 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-.wrapper{
+.wrapper {
   background-image: url("https://imagedelivery.net/69_vwp5TEvZvAzsHMtkORA/2aa169cb-d02c-483e-e561-a4aa6c785700/public");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -16,7 +16,23 @@ body {
   text-align: center;
 }
 
-p{
+input {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+[type="number"] {
+  height: 35px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+}
+
+p {
   color: #fff;
 }
 
@@ -27,11 +43,17 @@ h1 {
   margin: 0;
 }
 
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #survey-form {
-  width: 100%;
   max-width: 600px;
-  border-radius: .5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
   color: #fff;
   margin: 0 auto;
-  background-color: rgb(242, 84, 48, 0.75);
+  background-color: rgb(255, 95, 31, 0.75);
 }
