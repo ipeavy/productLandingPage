@@ -31,9 +31,9 @@ input {
   border-radius: 3px;
   border: none;
 }
-      
+
 input[type="text"],
-[type="number"],[type="email"]{
+[type="number"] {
   height: 35px;
   width: 100%;
 }
@@ -42,9 +42,9 @@ input[type="text"],
   margin: 0 0 0 0.5rem;
 }
 
-input[type="submit"] {
+input[type="button"] {
   height: 45px;
-  width: 300px;
+  width: 400px;
 }
 
 label {
