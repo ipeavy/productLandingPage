@@ -5,10 +5,20 @@ html {
 body {
   margin: 0;
   font-size: 18px;
+  text-align: center;
 }
 
 h1 {
   color: #333333;
   text-align: center;
   font-size: 30px;
+}
+
+#survey-form {
+  width: 100%;
+  max-width: 600px;
+  border-radius: .5rem;
+  margin: 0 auto;
+  background-color: rgb(242, 84, 48, 0.9);
+  height: 100%;
 }
