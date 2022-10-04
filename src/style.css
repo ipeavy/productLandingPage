@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  color: #fff;
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -14,16 +15,34 @@ body {
   margin: 0;
 }
 
+label{
+  font-size: 1.1rem;
+}
+
 main {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h1{
+  font-size: 40px;
+  margin: 0;
 }
 
 header {
   width: 100%;
+  display: flex;
   padding: 0;
   margin: 0;
   height: 5rem;
-  background-color: aliceblue;
+  background-color: #000000;
+}
+
+iframe{
+  width: 700px;
+  height: 400px;
 }
 
 ul {
@@ -37,7 +56,22 @@ li {
   cursor: pointer;
 }
 
+input[type="submit"]{
+  color: #000000;
+}
+
+input{
+  border: 0;
+  height: 30px;
+  width: 100%;
+  margin: .5rem 0;
+}
+
 section {
+  background-image: url("https://imagedelivery.net/69_vwp5TEvZvAzsHMtkORA/ff0f7d4b-6b21-4f6a-e7cf-cd5613f13c00/largedesktop");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -46,8 +80,10 @@ section {
 
 .container {
   display: flex;
+  background-color: rgb(204, 204, 204, .7);
   flex-direction: column;
-  margin: 0 auto;
+  border-radius: 5px;
+  padding: 1rem;
   max-width: 1368px;
 }
 
@@ -62,11 +98,15 @@ section {
 }
 
 .form-conts {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+  }
+
+  iframe{
+    width: 300px;
   }
 }
