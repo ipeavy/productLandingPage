@@ -10,7 +10,7 @@ html {
   height: 100%;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ main {
   padding: 4rem 0;
 }
 
-header{
+header {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -26,28 +26,47 @@ header{
   background-color: aliceblue;
 }
 
-ul{
+ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-li{
+li {
   padding: 1rem;
   cursor: pointer;
 }
 
-.container{
+section {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  justify-content: flex-end;
   max-width: 1368px;
 }
 
+.title-cont {
+  text-align: left;
+  padding: 1rem;
+}
+
+.form-cont {
+  padding: 1rem;
+  width: 60%;
+}
+
+.form-conts {
+  padding: 1rem;
+}
 
 @media screen and (max-width: 768px) {
-    .container{
-      flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
   }
+}
