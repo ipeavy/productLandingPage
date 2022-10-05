@@ -1,3 +1,20 @@
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  main {
+    flex-direction: row !important;
+    height: 100%;
+  }
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -7,6 +24,31 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+a{
+  text-decoration: none;
+
+}
+
+ /* unvisited link */
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+} 
+
 .wrapper {
   height: 100%;
 }
@@ -15,20 +57,31 @@ body {
   margin: 0;
 }
 
-label{
+label {
   font-size: 1.1rem;
 }
 
 main {
   padding: 4rem 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-h1{
+h1 {
   font-size: 40px;
   margin: 0;
+}
+
+footer{
+  background-color: #F9F9F9;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
 
 header {
@@ -36,11 +89,33 @@ header {
   display: flex;
   padding: 0;
   margin: 0;
+  position: fixed;
+  top: 0;
   height: 5rem;
   background-color: #000000;
 }
 
-iframe{
+#nav-bar{
+  position: fixed;
+  top: 0;
+}
+
+#header-img,
+img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+iframe {
   width: 700px;
   height: 400px;
 }
@@ -56,15 +131,15 @@ li {
   cursor: pointer;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   color: #000000;
 }
 
-input{
+input {
   border: 0;
   height: 30px;
   width: 100%;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 section {
@@ -72,19 +147,19 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: flex-start;
 }
 
 .container {
   display: flex;
-  background-color: rgb(204, 204, 204, .7);
+  background-color: rgb(204, 204, 204, 0.7);
   flex-direction: column;
   border-radius: 5px;
   padding: 1rem;
-  max-width: 1368px;
+  max-width: 600px;
 }
 
 .title-cont {
@@ -101,12 +176,4 @@ section {
   padding: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
 
-  iframe{
-    width: 300px;
-  }
-}

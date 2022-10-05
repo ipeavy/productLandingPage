@@ -7,25 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <div class="wrapper">
 
     <body>
         <!-- header -->
         <header id="header">
-            <nav>
-                <div id="header-img">
-                    <img src="https://imagedelivery.net/69_vwp5TEvZvAzsHMtkORA/e2b33bf4-bf8f-4d31-d14b-cfdc0ac3f100/logo"
+            <nav id="nav-bar">
+                <div >
+                    <img id="header-img" src="https://imagedelivery.net/69_vwp5TEvZvAzsHMtkORA/960181fc-0b27-4f94-8f56-5295bac3a300/mobile"
                         alt="">
                 </div>
                 <div class="nav-links">
                     <ul>
                         <li>
-                            Register
+                            <a class="nav-link" href="#main">Home</a>
                         </li>
                         <li>
-                            Video
+                            <a class="nav-link" href="#form">Register</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#video">Video</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +55,7 @@
                         </p>
                     </div>
                     <div class="form-cont">
-                        <form id="survey-form" action="">
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
                             <div class="form-wrapper">
                                 <!-- name input -->
                                 <div class="form-conts">
@@ -61,10 +64,10 @@
                                 </div>
                                 <div class="form-conts">
                                     <label id="email-label" for="email">Email</label><br>
-                                    <input id="email" placeholder="Enter your email" required name="email" type="text">
+                                    <input id="email" placeholder="Enter your email" required name="email" type="email">
                                 </div>
                                 <div class="form-conts">
-                                    <input id="email" value="Submit" required name="email" type="submit">
+                                    <input id="submit" href="" value="Submit" required name="email" type="submit">
                                 </div>
 
                             </div>
@@ -73,7 +76,11 @@
                 </div>
             </main>
         </section>
-
+        <footer>
+            <div>
+                RWB inc
+            </div>
+        </footer>
     </body>
 </div>
 <script src="index.js"></script>
